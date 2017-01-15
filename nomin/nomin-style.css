@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    font-size: 18px;
+    color: #2e2e2e;
+}
+a {
+    text-decoration: none;
+}
+.full-width-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #242424;
+}
+h1 {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: -10px;
+    color: #242424;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+h4 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#side-bar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 240px;
+    border-right: solid 1px #f5f7f6;
+    -webkit-box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.59);
+    -moz-box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.59);
+    box-shadow: 1px 0px 6px 0px rgba(0, 0, 0, 0.59);
+    background-image: url(https://lawson.rocks/img/sidebar-pattern.jpg);
+    z-index: 0;
+}
+#avatar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 14px;
+    width: 210px;
+    height: 210px;
+    background-image: url(https://lawson.rocks/img/avatar_web.jpg);
+    background-size: cover;
+    border-radius: 2px;
+    border: solid 2px #f5f7f6;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+    z-index: 2;
+}
+#name-socialbutton {
+    position: relative;
+    top: 246px;
+}
+#link-group {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.link {
+    margin-top: 1px;
+    text-align: center;
+    position: static;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    color: #f5f7f6;
+    border-top: solid 1px #f5f7f6;
+}
+.link:hover {
+    background: #1c1c1c;
+}
+#title-bar {
+    position: fixed;
+    z-index: -1;
+    left: 0px;
+    top: 0px;
+    height: 84px;
+    width: 100%;
+    background-image: url(https://lawson.rocks/img/titlebar-pattern.jpg);
+}
+#title {
+    line-height: 84px;
+    margin-left: 260px;
+    font-family: arial;
+    font-size: 80px;
+    text-align: center;
+    color: #f5f7f6;
+}
+#main-wrapper {
+    margin-top: 84px;
+    max-width: 100%;
+    z-index: 1;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.5);
+}
+#main-content {
+    padding-left: 280px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+    background-image: url(https://lawson.rocks/img/background-pattern.jpg);
+}
+#rela {
+    position: relative;
+    left: -282px;
+    top: 154px;
+    width: 240px;
+    height: 18px;
+    z-index: 1;
+    background-image: url(https://lawson.rocks/img/sidebar-pattern.png);
+}
+#about {
+    margin-top: 20px;
+    text-align: center;
+}
+.skill {
+    text-align: center;
+}
+.work-wrapper {
+    width: 60%;
+    margin: 0 auto;
+}
+.center {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bullet {
+    display: none;
+}
+#menu-button {
+    float: left;
+    position: fixed;
+    top: 26px;
+    left: 250px;
+    width: 40px;
+}
+.menu-line {
+    display: block;
+    margin-bottom: 4px;
+    width 100%;
+    height: 8px;
+    background: #242424;
+    border-radius: 1px;
+    opacity: .3;
+}
+@media (max-width: 800px) {
+    #side-bar {
+        left: -240px
+    }
+    #avatar {
+        left: -240px;
+    }
+    #title-bar {
+        left: 0px
+    }
+    #title {
+        margin-left: 0px
+    }
+    #main-wrapper {
+        margin-left: 0px
+    }
+    #rela {
+        left: -562px;
+    }
+    #main-content {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #menu-button {
+        left: 10px
+    }
+}
+@media (max-height: 510px) {
+    #avatar {
+        display: none;
+    }
+    #rela {
+        display: none;
+    }
+    #name-socialbutton {
+        top: 12px;
+        font-size: 32px;
+        font-weight: bold;
+    }
+}
+
+/*  SECTIONS  */
+
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+
+.col {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 0%;
+}
+.col:first-child {
+    margin-left: 0;
+}
+
+/*  GRID OF TWELVE  */
+
+.span_12_of_12 {
+    width: 100%;
+}
+.span_11_of_12 {
+    width: 91.66%;
+}
+.span_10_of_12 {
+    width: 83.33%;
+}
+.span_9_of_12 {
+    width: 75%;
+}
+.span_8_of_12 {
+    width: 66.66%;
+}
+.span_7_of_12 {
+    width: 58.33%;
+}
+.span_6_of_12 {
+    width: 50%;
+}
+.span_5_of_12 {
+    width: 41.66%;
+}
+.span_4_of_12 {
+    width: 33.33%;
+}
+.span_3_of_12 {
+    width: 25%;
+}
+.span_2_of_12 {
+    width: 16.66%;
+}
+.span_1_of_12 {
+    width: 8.333%;
+}
+
+
+/*  GO FULL WIDTH BELOW 1200 PIXELS */
+
+@media only screen and (max-width: 1200px) {
+    .col {
+        margin: 1% 0 1% 0%;
+    }
+    .span_1_of_12,
+    .span_2_of_12,
+    .span_3_of_12,
+    .span_4_of_12,
+    .span_5_of_12,
+    .span_6_of_12,
+    .span_7_of_12,
+    .span_8_of_12,
+    .span_9_of_12,
+    .span_10_of_12,
+    .span_11_of_12,
+    .span_12_of_12 {
+        width: 100%;
+    }
+    .bullet {
+        display: inline;
+    }
+    .skill-wrapper {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .work-wrapper {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .center {
+        width: 85%;
+    }
+    .skill {
+        text-align: left;
+    }
+}
